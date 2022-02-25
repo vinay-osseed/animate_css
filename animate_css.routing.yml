@@ -1,0 +1,7 @@
+animate_css.admin_settings:
+  path: '/admin/config/media/animate_css'
+  defaults:
+    _form: '\Drupal\animate_css\Form\AnimateCssSettingsForm'
+    _title: 'Animate CSS settings'
+  requirements:
+    _permission: 'administer site configuration'

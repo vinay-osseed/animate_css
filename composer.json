@@ -7,7 +7,7 @@
         "Drupal"
     ],
     "type": "drupal-module",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0",
     "homepage": "https://www.drupal.org/project/animate_css",
     "support": {
         "issues": "https://www.drupal.org/project/issues/animate_css",

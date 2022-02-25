@@ -1,0 +1,14 @@
+animate_css.settings:
+  type: config_object
+  label: 'Animate CSS settings'
+  mapping:
+    settings:
+      type: mapping
+      label: 'Custom Settings'
+      mapping:
+        animate_css_versions:
+          type: string
+          label: 'Animate CSS Version'
+        animate_css_custom_settings_library:
+          type: string
+          label: 'Animate CSS Library'

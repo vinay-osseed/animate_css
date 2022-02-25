@@ -12,9 +12,9 @@ use Drupal\Core\Routing\RouteMatchInterface;
  */
 function animate_css_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-     case 'help.page.animate_css':
+    case 'help.page.animate_css':
       return '<p>' . t('<a href="@animate">Animate</a> is a bunch of cool, fun, and cross-browser animations for you to use in your projects.', [
-        '@animate' => 'https://animate.style/',
+        '@animate' => 'https://animate.style',
       ]) . '</p>';
   }
 }
@@ -24,5 +24,7 @@ function animate_css_help($route_name, RouteMatchInterface $route_match) {
  */
 function animate_css_page_attachments(array &$attachments) {
   // Attach animate.css to all pages.
-  $attachments['#attached']['library'][] = 'animate_css/animate';
+  $config = \Drupal::config('animate_css.settings');
+  $library_option = $config->get('settings.library');
+  $attachments['#attached']['library'][] = ($library_option == 'cdn') ? 'animate_css/animate.cdn' : 'animate_css/animate.local';
 }

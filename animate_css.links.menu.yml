@@ -1,0 +1,5 @@
+animate_css.admin_settings:
+  title: 'Animate CSS settings'
+  description: 'Configure the Animate CSS settings.'
+  parent: system.admin_config_media
+  route_name: animate_css.admin_settings

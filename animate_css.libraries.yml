@@ -1,9 +1,19 @@
-animate:
-  remote: https://animate.style/
+animate.cdn:
+  version: "3.7.2"
   license:
     name: MIT
     url: http://opensource.org/licenses/MIT
     gpl-compatible: true
   css:
     theme:
-      /libraries/animate.css/animate.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css: {}
+
+animate.local:
+  version: "3.7.2"
+  license:
+    name: MIT
+    url: http://opensource.org/licenses/MIT
+    gpl-compatible: true
+  css:
+    theme:
+      /libraries/animate/animate.css: {}

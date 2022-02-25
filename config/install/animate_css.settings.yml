@@ -1,0 +1,4 @@
+settings:
+  version: '3.7.2'
+  library: 'cdn'
+  default_url: 'https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip'
