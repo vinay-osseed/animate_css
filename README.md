@@ -8,6 +8,14 @@ Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 Libraries
 Animate in libraries/animate (can be downloaded from link [here](https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip)
 
+## INSTALLATION AND CONFIGURATION
+
+1. Install the module as usual.
+
+2. Go to the path **admin/config/media/animate_css** or **Confuguration->Media->Animate CSS Setting** and select **Attachment Option**.
+
+3. If you selected **Local Library** then Download and ADD the library from [here](https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip) and unzip content in **PROJECT_ROOT/libraries/animate** folder.
+
 ## Module Usage
 
 To animate an element, add the class `animated` to an element. You can include the class `infinite` for an infinite loop. Finally you need to add one of the following classes to the element:
@@ -135,11 +143,3 @@ It's possible to control the speed of the animation by adding these classes, as 
 | `faster`   | `500ms`    |
 
 > _**Note**: The `animated` class has a default speed of `1s`. If you need custom duration, add it directly to your own CSS code._
-
-## INSTALLATION AND CONFIGURATION
-
-1. Install the module as usual.
-
-2. Go to the path **admin/config/media/animate_css** or **Confuguration->Media->Animate CSS Setting** and select **Attachment Option**.
-
-3. If you selected **Local Library** then Download and ADD the library from [here](https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip) and unzip content in **PROJECT_ROOT/libraries/animate** folder.
