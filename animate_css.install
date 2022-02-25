@@ -1,0 +1,45 @@
+<?php
+
+use Drupal\Core\Messenger\MessengerInterface;
+
+/**
+ * @file
+ * Requirements page for Animate Css.
+ */
+
+define('DOWNLOAD_URL', 'https://github.com/animate-css/animate.css/archive/main.zip');
+
+/**
+ * Implements hook_install().
+ */
+function animate_css_install() {
+  // Check for Animate Library.
+  $library = \Drupal::service('library.discovery')->getLibraryByName('animate_css', 'animate');
+  $library_exists = file_exists(DRUPAL_ROOT . '/' . $library['css'][0]['data']);
+  if (!$library_exists) {
+    $download_url = 'https://github.com/daneden/animate.css/archive/master.zip';
+    MessengerInterface::addMessage(t('Animate CSS module requires the animate library. <a href=":anim_link">Download animate library</a> and unzip into /libraries/animate.css.', [':anim_link' => DOWNLOAD_URL]));
+  }
+}
+
+/**
+ * Implements hook_requirements().
+ */
+function animate_css_requirements($phase) {
+  // Verify Animate is enabled.
+  if ($phase == 'install') {
+    return [];
+  }
+
+  $library = \Drupal::service('library.discovery')->getLibraryByName('animate_css', 'animate');
+  $library_exists = file_exists(DRUPAL_ROOT . '/' . $library['css'][0]['data']);
+
+  return [
+    'animate_library_downloaded' => [
+      'title' => t('Animate library'),
+      'value' => $library_exists ? t('Installed') : t('Not installed'),
+      'description' => $library_exists ? '' : t('The Animate library needs to be <a href="@url">downloaded</a> and extracted into the /libraries/animate.css folder in your Drupal installation directory.', ['@url' => DOWNLOAD_URL]),
+      'severity' => $library_exists ? REQUIREMENT_OK : REQUIREMENT_ERROR,
+    ],
+  ];
+}

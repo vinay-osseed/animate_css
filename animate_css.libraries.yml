@@ -1,0 +1,9 @@
+animate:
+  remote: https://animate.style/
+  license:
+    name: MIT
+    url: http://opensource.org/licenses/MIT
+    gpl-compatible: true
+  css:
+    theme:
+      /libraries/animate.css/animate.css: {}

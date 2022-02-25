@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Drupal integration with Animate.css.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function animate_css_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+     case 'help.page.animate_css':
+      return '<p>' . t('<a href="@animate">Animate</a> is a bunch of cool, fun, and cross-browser animations for you to use in your projects.', [
+        '@animate' => 'https://animate.style/',
+      ]) . '</p>';
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function animate_css_page_attachments(array &$attachments) {
+  // Attach animate.css to all pages.
+  $attachments['#attached']['library'][] = 'animate_css/animate';
+}

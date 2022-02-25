@@ -1,0 +1,43 @@
+{
+    "name": "drupal/animate_css",
+    "description": "Animate is an integration of animate.css, a bunch of cool, fun, and cross-browser animations for you to use in your projects.Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.",
+    "keywords": [
+        "animate_css",
+        "animate",
+        "Drupal"
+    ],
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/animate_css",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/animate_css",
+        "source": "http://cgit.drupalcode.org/animate_css"
+    },
+    "repositories": [
+      {
+          "type": "composer",
+          "url": "https://packages.drupal.org/8"
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "daneden/animate.css",
+          "version": "3.7.2",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://github.com/daneden/animate.css/archive/3.7.2.zip",
+            "type": "zip"
+          }
+        }
+      }
+    ],
+    "extra": {
+      "installer-paths": {
+        "libraries/{$name}": ["type:drupal-library"]
+      }
+    },
+    "minimum-stability": "dev",
+    "require": {
+      "daneden/animate.css": "3.7.2"
+    }
+}
