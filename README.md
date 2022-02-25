@@ -12,9 +12,9 @@ Animate in libraries/animate (can be downloaded from link [here](https://github.
 
 1. Install the module as usual.
 
-2. Go to the path **admin/config/media/animate_css** or **Confuguration->Media->Animate CSS Setting** and select **Attachment Option**.
+2. Go to the path `admin/config/media/animate_css` or `Confuguration->Media->Animate CSS Setting` and select `Attachment Option`
 
-3. If you selected **Local Library** then Download and ADD the library from [here](https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip) and unzip content in **PROJECT_ROOT/libraries/animate** folder.
+3. If you selected `Local Library` then Download and ADD the library from [here](https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip) and unzip content in `PROJECT_ROOT/libraries/animate` folder.
 
 ## Module Usage
 
