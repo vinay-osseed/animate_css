@@ -6,7 +6,7 @@ Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 ## Dependencies
 
 Libraries
-Animate in libraries/animate (can be downloaded from link [here](https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip)
+Animate in libraries/animate (can be downloaded from link [here](https://github.com/animate-css/animate.css/archive/refs/tags/3.7.2.zip))
 
 ## INSTALLATION AND CONFIGURATION
 
